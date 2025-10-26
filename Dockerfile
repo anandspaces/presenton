@@ -6,13 +6,14 @@ RUN apt-get update && apt-get install -y \
     curl \
     libreoffice \
     fontconfig \
-    chromium
-
+    chromium \
+    ca-certificates \
+    && rm -rf /var/lib/apt/lists/*
 
 # Install Node.js 20 using NodeSource repository
 RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - && \
-    apt-get install -y nodejs
-
+    apt-get install -y nodejs && \
+    rm -rf /var/lib/apt/lists/*
 
 # Create a working directory
 WORKDIR /app  
@@ -22,15 +23,11 @@ ENV APP_DATA_DIRECTORY=/app_data
 ENV TEMP_DIRECTORY=/tmp/presenton
 ENV PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium
 
-
-# Install ollama
-RUN curl -fsSL https://ollama.com/install.sh | sh
-
 # Install dependencies for FastAPI
-RUN pip install aiohttp aiomysql aiosqlite asyncpg fastapi[standard] \
+RUN pip install --no-cache-dir aiohttp aiomysql aiosqlite asyncpg fastapi[standard] \
     pathvalidate pdfplumber chromadb sqlmodel \
     anthropic google-genai openai fastmcp dirtyjson
-RUN pip install docling --extra-index-url https://download.pytorch.org/whl/cpu
+RUN pip install --no-cache-dir docling --extra-index-url https://download.pytorch.org/whl/cpu
 
 # Install dependencies for Next.js
 WORKDIR /app/servers/nextjs

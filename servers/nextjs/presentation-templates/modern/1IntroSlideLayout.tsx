@@ -67,7 +67,7 @@ const IntroPitchDeckSlide: React.FC<IntroSlideLayoutProps> = ({
         }}
       >
         {/* Top Header */}
-        <div className="absolute top-8 left-10 right-10 flex justify-between items-center text-[#1E4CD9] text-sm font-semibold">
+        <div className="absolute top-8 left-10 right-10 flex justify-between items-center text-[#1ed937] text-sm font-semibold">
           <p>{slideData?.companyName}</p>
           <p>{slideData?.date}</p>
         </div>
@@ -83,14 +83,14 @@ const IntroPitchDeckSlide: React.FC<IntroSlideLayoutProps> = ({
           {title && (
             <div className="relative inline-block">
               <h1
-                className="text-7xl font-bold text-[#1E4CD9] leading-none"
+                className="text-7xl font-bold text-[#1ed937] leading-none"
                 id="pitchdeck-title"
               >
                 {title}
               </h1>
               {/* Blue underline */}
               <span
-                className="block bg-[#1E4CD9] h-[4px] absolute left-0"
+                className="block bg-[#1ed937] h-[4px] absolute left-0"
                 style={{
                   width: "50%",
                   bottom: "-0.5em",
@@ -102,7 +102,7 @@ const IntroPitchDeckSlide: React.FC<IntroSlideLayoutProps> = ({
         </div>
 
         {/* Bottom Contact Row */}
-        <div className="absolute bottom-8 left-10 right-10 flex flex-wrap items-center gap-10 text-[#1E4CD9] text-sm font-medium">
+        <div className="absolute bottom-8 left-10 right-10 flex flex-wrap items-center gap-10 text-[#1ed937] text-sm font-medium">
           {contactNumber && (
             <div className="flex items-center gap-2">
               <span className="text-lg">📞</span>

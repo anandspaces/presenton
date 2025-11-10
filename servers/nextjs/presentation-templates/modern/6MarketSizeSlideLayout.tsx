@@ -93,7 +93,7 @@ const MarketSizeSlideLayout: React.FC<MarketSizeSlideProps> = ({
         }}
       >
         {/* Header */}
-        <div className="absolute top-8 left-10 right-10 flex justify-between items-center text-[#1E4CD9] text-sm font-semibold">
+        <div className="absolute top-8 left-10 right-10 flex justify-between items-center text-[#1ed937] text-sm font-semibold">
           <span>{slideData?.companyName || "Rimberio"}</span>
           <span>{slideData?.date || "June 13, 2038"}</span>
         </div>
@@ -105,7 +105,7 @@ const MarketSizeSlideLayout: React.FC<MarketSizeSlideProps> = ({
             <div className="flex flex-col items-left justify-center h-full w-full">
               {/* Move the title down to align with the top of the market stats */}
               <h1
-                className="text-6xl font-bold text-blue-600 mb-8 leading-tight text-left"
+                className="text-6xl font-bold text-purple-600 mb-8 leading-tight text-left"
                 style={{ marginTop: "112px" }} // 112px matches top-36 (9rem) of stats
               >
                 {slideData?.title || "Market Size"}
@@ -121,7 +121,7 @@ const MarketSizeSlideLayout: React.FC<MarketSizeSlideProps> = ({
                 )}
               </div>
               {slideData?.description && (
-                <p className="text-blue-600 text-sm leading-relaxed font-normal mb-12 max-w-lg text-left">
+                <p className="text-purple-600 text-sm leading-relaxed font-normal mb-12 max-w-lg text-left">
                   {slideData?.description}
                 </p>
               )}
@@ -134,10 +134,10 @@ const MarketSizeSlideLayout: React.FC<MarketSizeSlideProps> = ({
               {stats.map((stat, index) => (
                 <div key={index}>
                   <div className="space-y-2">
-                    <div className="bg-[#1E4CD9] text-white text-sm font-semibold px-3 py-1 inline-block rounded-sm">
+                    <div className="bg-[#1ed937] text-white text-sm font-semibold px-3 py-1 inline-block rounded-sm">
                       <span className="text-sm">{stat.label}</span>
                     </div>
-                    <div className="text-2xl font-bold text-[#1E4CD9]">
+                    <div className="text-2xl font-bold text-[#1ed937]">
                       {stat.value}
                     </div>
                   </div>

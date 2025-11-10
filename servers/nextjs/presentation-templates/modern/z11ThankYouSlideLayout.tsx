@@ -59,7 +59,7 @@ const ThankYouSlideLayout: React.FC<ThankYouSlideLayoutProps> = ({ data }) => {
         className="w-full rounded-sm max-w-[1280px] shadow-lg max-h-[720px] aspect-video relative z-20 mx-auto overflow-hidden flex flex-col"
         style={{
           fontFamily: "Montserrat, sans-serif",
-          backgroundColor: "#1E4CD9", // blue background
+          backgroundColor: "#1ed937", // blue background
         }}
       >
         {/* Header */}
@@ -76,7 +76,7 @@ const ThankYouSlideLayout: React.FC<ThankYouSlideLayoutProps> = ({ data }) => {
               {data?.title || "Thank You!"}
             </h1>
             {data?.subtitle && (
-              <div className="text-xl text-blue-100 font-normal text-left w-full mb-2">
+              <div className="text-xl text-purple-100 font-normal text-left w-full mb-2">
                 {data.subtitle}
               </div>
             )}

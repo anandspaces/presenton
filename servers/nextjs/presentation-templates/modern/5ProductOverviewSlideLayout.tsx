@@ -112,7 +112,7 @@ const ProductOverviewSlideLayout: React.FC<ProductOverviewSlideLayoutProps> = ({
         }}
       >
         {/* Header */}
-        <div className="absolute top-8 left-10 right-10 flex justify-between items-center text-[#1E4CD9] text-sm font-semibold">
+        <div className="absolute top-8 left-10 right-10 flex justify-between items-center text-[#1ed937] text-sm font-semibold">
           <span>{slideData?.companyName}</span>
           <span>{slideData?.date}</span>
         </div>
@@ -121,10 +121,10 @@ const ProductOverviewSlideLayout: React.FC<ProductOverviewSlideLayoutProps> = ({
         <div className="flex h-full px-16 pb-16">
           {/* Title and Description on the left */}
           <div className="flex flex-col items-start justify-center w-[48%] pr-8">
-            <h1 className="text-6xl font-bold text-blue-600 mb-8 leading-tight text-left">
+            <h1 className="text-6xl font-bold text-purple-600 mb-8 leading-tight text-left">
               {slideData?.title}
             </h1>
-            <p className="text-blue-600 text-lg leading-relaxed font-normal mb-12 max-w-lg text-left">
+            <p className="text-purple-600 text-lg leading-relaxed font-normal mb-12 max-w-lg text-left">
               {slideData?.mainDescription}
             </p>
           </div>
@@ -143,16 +143,16 @@ const ProductOverviewSlideLayout: React.FC<ProductOverviewSlideLayoutProps> = ({
                 >
                   {/* Top Section - Blue background with text */}
                   <div
-                    className={`${products[0].isBlueBackground ? "bg-blue-600" : "bg-gray-100"} p-5 flex flex-col justify-center text-center rounded-t-md`}
+                    className={`${products[0].isBlueBackground ? "bg-purple-600" : "bg-gray-100"} p-5 flex flex-col justify-center text-center rounded-t-md`}
                     style={{ height: `${TEXT_SECTION_HEIGHT + 32}px` }}
                   >
                     <h2
-                      className={`text-xl font-semibold mb-3 ${products[0].isBlueBackground ? "text-white" : "text-blue-600"}`}
+                      className={`text-xl font-semibold mb-3 ${products[0].isBlueBackground ? "text-white" : "text-purple-600"}`}
                     >
                       {products[0].title}
                     </h2>
                     <p
-                      className={`text-sm leading-relaxed ${products[0].isBlueBackground ? "text-white" : "text-blue-600"}`}
+                      className={`text-sm leading-relaxed ${products[0].isBlueBackground ? "text-white" : "text-purple-600"}`}
                     >
                       {products[0].description}
                     </p>
@@ -198,16 +198,16 @@ const ProductOverviewSlideLayout: React.FC<ProductOverviewSlideLayoutProps> = ({
                   </div>
                   {/* Bottom Section - Blue background with text */}
                   <div
-                    className={`${products[1].isBlueBackground ? "bg-blue-600" : "bg-gray-100"} p-5 flex flex-col justify-center text-center rounded-b-md`}
+                    className={`${products[1].isBlueBackground ? "bg-purple-600" : "bg-gray-100"} p-5 flex flex-col justify-center text-center rounded-b-md`}
                     style={{ height: `${TEXT_SECTION_HEIGHT + 32}px` }}
                   >
                     <h2
-                      className={`text-xl font-semibold mb-3 ${products[1].isBlueBackground ? "text-white" : "text-blue-600"}`}
+                      className={`text-xl font-semibold mb-3 ${products[1].isBlueBackground ? "text-white" : "text-purple-600"}`}
                     >
                       {products[1].title}
                     </h2>
                     <p
-                      className={`text-sm leading-relaxed ${products[1].isBlueBackground ? "text-white" : "text-blue-600"}`}
+                      className={`text-sm leading-relaxed ${products[1].isBlueBackground ? "text-white" : "text-purple-600"}`}
                     >
                       {products[1].description}
                     </p>
@@ -218,7 +218,7 @@ const ProductOverviewSlideLayout: React.FC<ProductOverviewSlideLayoutProps> = ({
           </div>
         </div>
         {/* Bottom Border */}
-        <div className="absolute bottom-0 left-0 right-0 h-1 bg-blue-600"></div>
+        <div className="absolute bottom-0 left-0 right-0 h-1 bg-purple-600"></div>
       </div>
     </>
   );

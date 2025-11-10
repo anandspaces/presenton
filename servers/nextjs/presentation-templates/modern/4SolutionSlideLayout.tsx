@@ -116,7 +116,7 @@ const SolutionSlideLayout: React.FC<SolutionSlideLayoutProps> = ({
         }}
       >
         {/* Header */}
-        <div className="absolute top-8 left-10 right-10 flex justify-between items-center text-[#1E4CD9] text-sm font-semibold">
+        <div className="absolute top-8 left-10 right-10 flex justify-between items-center text-[#1ed937] text-sm font-semibold">
           <span>{slideData?.companyName}</span>
           <span>{slideData?.date}</span>
         </div>
@@ -125,10 +125,10 @@ const SolutionSlideLayout: React.FC<SolutionSlideLayoutProps> = ({
         <div className="flex justify-center items-center h-full px-16 pb-16 gap-4">
           {/* Title and Description */}
           <div className="w-full flex flex-col items-start mb-4">
-            <h1 className="text-6xl font-bold text-blue-600 mb-8 leading-tight text-left">
+            <h1 className="text-6xl font-bold text-purple-600 mb-8 leading-tight text-left">
               {slideData?.title}
             </h1>
-            <p className="text-blue-600 text-lg leading-relaxed font-normal mb-12 max-w-lg text-left">
+            <p className="text-purple-600 text-lg leading-relaxed font-normal mb-12 max-w-lg text-left">
               {slideData?.mainDescription}
             </p>
           </div>
@@ -148,11 +148,11 @@ const SolutionSlideLayout: React.FC<SolutionSlideLayoutProps> = ({
                     />
                   )}
                 </div>
-                <h2 className="text-lg font-semibold text-blue-600 mb-1">
+                <h2 className="text-lg font-semibold text-purple-600 mb-1">
                   {section.title}
                 </h2>
-                <div className="w-8 h-1 bg-blue-600 mb-2"></div>
-                <p className="text-blue-600 text-xs leading-snug">
+                <div className="w-8 h-1 bg-purple-600 mb-2"></div>
+                <p className="text-purple-600 text-xs leading-snug">
                   {section.description}
                 </p>
               </div>
@@ -161,7 +161,7 @@ const SolutionSlideLayout: React.FC<SolutionSlideLayoutProps> = ({
         </div>
 
         {/* Bottom Border */}
-        <div className="absolute bottom-0 left-0 right-0 h-1 bg-blue-600"></div>
+        <div className="absolute bottom-0 left-0 right-0 h-1 bg-purple-600"></div>
       </div>
     </>
   );

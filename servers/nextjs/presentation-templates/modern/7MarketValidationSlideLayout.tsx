@@ -100,7 +100,7 @@ const MarketValidationSlideLayout: React.FC<
         }}
       >
         {/* Header */}
-        <div className="absolute top-8 left-10 right-10 flex justify-between items-center text-[#1E4CD9] text-sm font-semibold">
+        <div className="absolute top-8 left-10 right-10 flex justify-between items-center text-[#1ed937] text-sm font-semibold">
           <span>{slideData?.companyName}</span>
           <span>{slideData?.date}</span>
         </div>
@@ -109,10 +109,10 @@ const MarketValidationSlideLayout: React.FC<
         <div className="px-16 py-16 flex h-full gap-8">
           {/* Left Column */}
           <div className="flex-1 pr-12 flex flex-col justify-center">
-            <h1 className="text-6xl font-bold text-blue-600 mb-8 leading-tight text-left">
+            <h1 className="text-6xl font-bold text-purple-600 mb-8 leading-tight text-left">
               {slideData?.title}
             </h1>
-            <p className="text-blue-600 text-sm leading-relaxed font-normal mb-12 max-w-lg text-left">
+            <p className="text-purple-600 text-sm leading-relaxed font-normal mb-12 max-w-lg text-left">
               {slideData?.description}
             </p>
           </div>
@@ -162,10 +162,10 @@ const MarketValidationSlideLayout: React.FC<
               <Table>
                 <TableHeader>
                   <tr>
-                    <th className="text-left px-4 py-2 text-blue-700">
+                    <th className="text-left px-4 py-2 text-purple-700">
                       {comparisonData.length > 0 ? "Name" : "Name"}
                     </th>
-                    <th className="text-left px-4 py-2 text-blue-700">
+                    <th className="text-left px-4 py-2 text-purple-700">
                       {metricLabel}
                     </th>
                   </tr>
@@ -185,7 +185,7 @@ const MarketValidationSlideLayout: React.FC<
           </div>
         </div>
 
-        <div className="absolute bottom-0 left-0 right-0 h-1 bg-blue-600" />
+        <div className="absolute bottom-0 left-0 right-0 h-1 bg-purple-600" />
       </div>
     </>
   );

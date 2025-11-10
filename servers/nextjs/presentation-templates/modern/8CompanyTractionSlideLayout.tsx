@@ -118,7 +118,7 @@ interface Props {
 
 // Helper: assign colors to series
 const defaultColors = [
-  "#1E4CD9",
+  "#1ed937",
   "#3b82f6",
   "#f59e0b",
   "#10b981",
@@ -187,7 +187,7 @@ const CompanyTractionSlideLayout: React.FC<Props> = ({ data }) => {
         }}
       >
         {/* Header */}
-        <div className="absolute top-8 left-10 right-10 flex justify-between items-center text-[#1E4CD9] text-sm font-semibold">
+        <div className="absolute top-8 left-10 right-10 flex justify-between items-center text-[#1ed937] text-sm font-semibold">
           <span>{data?.companyName}</span>
           <span>{data?.date}</span>
         </div>
@@ -196,7 +196,7 @@ const CompanyTractionSlideLayout: React.FC<Props> = ({ data }) => {
         <div className="px-16 py-16 flex h-full gap-8">
           {/* Left Column - Chart with Title Below */}
           <div className="flex-1 pr-12 flex flex-col justify-center">
-            <h1 className="text-6xl font-bold text-blue-600 mb-4 leading-tight text-left">
+            <h1 className="text-6xl font-bold text-purple-600 mb-4 leading-tight text-left">
               {data?.title}
             </h1>
             <div className="bg-white rounded-lg shadow p-4 mb-8">
@@ -206,16 +206,16 @@ const CompanyTractionSlideLayout: React.FC<Props> = ({ data }) => {
                     <CartesianGrid stroke="#e5eafe" />
                     <XAxis
                       dataKey="year"
-                      stroke="#1E4CD9"
-                      tick={{ fill: "#1E4CD9", fontWeight: 600 }}
+                      stroke="#1ed937"
+                      tick={{ fill: "#1ed937", fontWeight: 600 }}
                     />
                     <YAxis
-                      stroke="#1E4CD9"
-                      tick={{ fill: "#1E4CD9", fontWeight: 600 }}
+                      stroke="#1ed937"
+                      tick={{ fill: "#1ed937", fontWeight: 600 }}
                     />
                     <Tooltip
                       contentStyle={{
-                        backgroundColor: "#1E4CD9",
+                        backgroundColor: "#1ed937",
                         border: "none",
                         color: "#fff",
                       }}
@@ -223,7 +223,7 @@ const CompanyTractionSlideLayout: React.FC<Props> = ({ data }) => {
                       itemStyle={{ color: "#fff" }}
                     />
                     <Legend
-                      wrapperStyle={{ color: "#1E4CD9", fontWeight: 600 }}
+                      wrapperStyle={{ color: "#1ed937", fontWeight: 600 }}
                       iconType="circle"
                     />
                     {seriesKeys.map((key, idx) => (
@@ -254,7 +254,7 @@ const CompanyTractionSlideLayout: React.FC<Props> = ({ data }) => {
 
           {/* Right Column - Description and Stats */}
           <div className="flex flex-col items-start justify-center w-[52%] gap-8">
-            <p className="text-blue-600 text-base leading-relaxed font-normal mb-6 max-w-xl text-left">
+            <p className="text-purple-600 text-base leading-relaxed font-normal mb-6 max-w-xl text-left">
               {data?.description ||
                 "Traction is a period where the company is feeling momentum during its development period. If traction momentum is not harnessed, sales figures can decline and the customer base can shrink. In general, companies will judge success by the amount of revenue and new customers they receive."}
             </p>
@@ -264,10 +264,10 @@ const CompanyTractionSlideLayout: React.FC<Props> = ({ data }) => {
                   key={index}
                   className="flex-1 bg-[#f5f8ff] rounded-lg shadow-sm px-5 py-4 flex flex-col items-start"
                 >
-                  <div className="bg-[#1E4CD9] text-white text-xs font-semibold px-3 py-1 rounded-sm mb-2">
+                  <div className="bg-[#1ed937] text-white text-xs font-semibold px-3 py-1 rounded-sm mb-2">
                     {stat.label}
                   </div>
-                  <div className="text-2xl font-bold text-[#1E4CD9] mb-1">
+                  <div className="text-2xl font-bold text-[#1ed937] mb-1">
                     {stat.value}
                   </div>
                   <p className="text-sm text-gray-700 leading-snug">
@@ -278,7 +278,7 @@ const CompanyTractionSlideLayout: React.FC<Props> = ({ data }) => {
             </div>
           </div>
         </div>
-        <div className="absolute bottom-0 left-0 right-0 h-1 bg-blue-600" />
+        <div className="absolute bottom-0 left-0 right-0 h-1 bg-purple-600" />
       </div>
     </>
   );

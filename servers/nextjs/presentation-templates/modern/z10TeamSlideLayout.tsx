@@ -5,7 +5,7 @@ import { ImageSchema } from "@/presentation-templates/defaultSchemes";
 export const layoutId = "modern-team-slide";
 export const layoutName = "Modern Team Slide";
 export const layoutDescription =
-  "A clean modern team slide showcasing team members with professional profiles and blue-white design.";
+  "A clean modern team slide showcasing team members with professional profiles and purple-white design.";
 
 const teamMemberSchema = z.object({
   name: z.string().min(2).max(50).meta({
@@ -117,7 +117,7 @@ const ModernTeamSlideLayout: React.FC<ModernTeamSlideLayoutProps> = ({
         }}
       >
         {/* Header */}
-        <div className="absolute top-8 left-10 right-10 flex justify-between items-center text-[#1E4CD9] text-sm font-semibold">
+        <div className="absolute top-8 left-10 right-10 flex justify-between items-center text-[#1ed937] text-sm font-semibold">
           <span>{slideData?.companyName}</span>
           <span>{slideData?.date}</span>
         </div>
@@ -126,13 +126,13 @@ const ModernTeamSlideLayout: React.FC<ModernTeamSlideLayoutProps> = ({
         <div className="relative z-10 flex flex-col items-start justify-center h-full px-16 pt-24 pb-10">
           {/* Title */}
           <h1
-            className="text-7xl font-bold text-blue-600 mb-4 leading-tight text-left"
+            className="text-7xl font-bold text-purple-600 mb-4 leading-tight text-left"
             style={{ letterSpacing: "-0.03em" }}
           >
             {slideData?.title}
           </h1>
           {/* Subtitle */}
-          <p className="text-blue-600 text-lg leading-relaxed font-normal mb-12 max-w-lg text-left">
+          <p className="text-purple-600 text-lg leading-relaxed font-normal mb-12 max-w-lg text-left">
             {slideData?.subtitle}
           </p>
           {/* Team Members Row */}
@@ -144,7 +144,7 @@ const ModernTeamSlideLayout: React.FC<ModernTeamSlideLayoutProps> = ({
                 style={{ minHeight: 340 }}
               >
                 {/* Photo */}
-                <div className="relative w-28 h-28 mb-4 rounded overflow-hidden bg-white border-2 border-blue-100 flex items-center justify-center">
+                <div className="relative w-28 h-28 mb-4 rounded overflow-hidden bg-white border-2 border-purple-100 flex items-center justify-center">
                   {member.image.__image_url__ && (
                     <img
                       src={member.image.__image_url__}
@@ -154,11 +154,11 @@ const ModernTeamSlideLayout: React.FC<ModernTeamSlideLayoutProps> = ({
                   )}
                 </div>
                 {/* Name */}
-                <div className="text-lg font-bold text-blue-700 mb-1">
+                <div className="text-lg font-bold text-purple-700 mb-1">
                   {member.name}
                 </div>
                 {/* Position Badge */}
-                <div className="bg-blue-600 text-white text-xs font-semibold px-3 py-1 rounded-sm mb-2 uppercase tracking-wide">
+                <div className="bg-purple-600 text-white text-xs font-semibold px-3 py-1 rounded-sm mb-2 uppercase tracking-wide">
                   {member.position}
                 </div>
                 {/* Description */}
@@ -171,7 +171,7 @@ const ModernTeamSlideLayout: React.FC<ModernTeamSlideLayoutProps> = ({
                     href={member.linkedIn}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center text-xs text-blue-600 hover:text-blue-800 transition-colors duration-200 mt-1"
+                    className="inline-flex items-center text-xs text-purple-600 hover:text-purple-800 transition-colors duration-200 mt-1"
                   >
                     <svg
                       className="w-4 h-4 mr-1"
@@ -192,7 +192,7 @@ const ModernTeamSlideLayout: React.FC<ModernTeamSlideLayoutProps> = ({
           </div>
         </div>
         {/* Bottom Divider */}
-        <div className="absolute bottom-0 left-0 right-0 h-1 bg-blue-600" />
+        <div className="absolute bottom-0 left-0 right-0 h-1 bg-purple-600" />
       </div>
     </>
   );

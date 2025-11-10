@@ -134,7 +134,7 @@ return (
         <h1 className="text-[64px] leading-[1.05] tracking-tight  font-semibold mt-2" style={{ color: 'var(--text-heading-color, #111827)' }}>
         {slideData?.title}
         </h1>
-        <p className="mt-5 text-[16px] leading-[1.6] max-w-[1020px] " style={{ color: 'var(--text-body-color, #6B7280)' }}>
+        <p className="mt-5 text-[16px] leading-[1.6] max-w-[1020px] " style={{ color: 'var(--text-body-color, #a6c8c6)' }}>
         {slideData?.description}
         </p>
     </div>
@@ -171,7 +171,7 @@ return (
                     <span className="text-[32px] font-extrabold " style={{ color: 'var(--text-heading-color, #111827)' }}>{card.value}{card.unit}</span>
                     </div>
                 </div>
-                <p className="mt-6 text-[16px] leading-[1.6] " style={{ color: 'var(--text-body-color, #6B7280)' }}>
+                <p className="mt-6 text-[16px] leading-[1.6] " style={{ color: 'var(--text-body-color, #a6c8c6)' }}>
                     {card.description}
                 </p>
                 </div>

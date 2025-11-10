@@ -135,7 +135,7 @@ const ImageSchema = z.object({
                     <h3 className="text-[24px] leading-tight  font-semibold" style={{ color: 'var(--text-heading-color, #111827)' }}>
                       {b.title}
                     </h3>
-                    <p className="mt-2 text-[16px] leading-relaxed " style={{ color: 'var(--text-body-color, #6B7280)' }}>
+                    <p className="mt-2 text-[16px] leading-relaxed " style={{ color: 'var(--text-body-color, #a6c8c6)' }}>
                       {b.body}
                     </p>
                   </div>
@@ -161,7 +161,7 @@ const ImageSchema = z.object({
               <h1 className="text-[64px] leading-[0.95]  font-semibold" style={{ color: 'var(--text-heading-color, #111827)' }}>
                 <span className="block">{slideData?.rightHeader?.heading || "Our Journey"}</span>
               </h1>
-              <p className="mt-6 text-[16px] leading-relaxed " style={{ color: 'var(--text-body-color, #6B7280)' }}>
+              <p className="mt-6 text-[16px] leading-relaxed " style={{ color: 'var(--text-body-color, #a6c8c6)' }}>
                 {slideData?.rightHeader?.paragraph || "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore."}
               </p>
             </div>

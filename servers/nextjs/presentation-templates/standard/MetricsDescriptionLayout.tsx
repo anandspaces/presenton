@@ -139,7 +139,7 @@ const ImageSchema = z.object({
             {slideData?.title || "Scaling New Heights Together"}
           </h1>
   
-          <p className="mt-3 text-[16px] " style={{ color: 'var(--text-body-color, #6B7280)' }}>
+          <p className="mt-3 text-[16px] " style={{ color: 'var(--text-body-color, #a6c8c6)' }}>
             {slideData?.tagline || "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna"}
           </p>
   

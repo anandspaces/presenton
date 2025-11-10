@@ -127,7 +127,7 @@ const ImageSchema = z.object({
                 <div className="text-[24px] leading-tight " style={{ color: 'var(--text-heading-color, #111827)' }}>
                   {card.name}
                 </div>
-                <div className="mt-3 text-[14px] leading-[22px] " style={{ color: 'var(--text-body-color, #6B7280)' }}>
+                <div className="mt-3 text-[14px] leading-[22px] " style={{ color: 'var(--text-body-color, #a6c8c6)' }}>
                   {card.role}
                 </div>
               </div>

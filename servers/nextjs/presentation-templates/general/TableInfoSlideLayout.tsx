@@ -100,7 +100,7 @@ const TableInfoSlideLayout: React.FC<TableInfoSlideLayoutProps> = ({ data: slide
                             {slideData?.title || 'Market Comparison'}
                         </h1>
                         {/* Purple accent line */}
-                        <div style={{background:"var(--primary-accent-color,#9333ea)"}} className="w-20 h-1 bg-purple-600 mx-auto"></div>
+                        <div style={{background:"var(--primary-accent-color,#9333ea)"}} className="w-20 h-1 bg-#ffbb4d mx-auto"></div>
                     </div>
 
                     {/* Table Section */}

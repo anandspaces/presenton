@@ -124,7 +124,7 @@ const BulletWithIconsSlideLayout: React.FC<BulletWithIconsSlideLayoutProps> = ({
                         </div>
 
                         {/* Decorative Sparkle */}
-                        <div style={{color:"var(--primary-accent-color,#9333ea)"}} className="absolute top-20 right-8 text-purple-600">
+                        <div style={{color:"var(--primary-accent-color,#9333ea)"}} className="absolute top-20 right-8 text-#ffbb4d">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M12 0l3.09 6.26L22 9l-6.91 2.74L12 18l-3.09-6.26L2 9l6.91-2.74L12 0z"/>
                             </svg>
@@ -158,7 +158,7 @@ const BulletWithIconsSlideLayout: React.FC<BulletWithIconsSlideLayoutProps> = ({
                                         <h3 style={{color:"var(--text-heading-color,#111827)"}} className="text-xl font-semibold text-gray-900 mb-2">
                                             {bullet.title}
                                         </h3>
-                                        <div style={{background:"var(--primary-accent-color,#9333ea)"}} className="w-12 h-0.5 bg-purple-600 mb-3"></div>
+                                        <div style={{background:"var(--primary-accent-color,#9333ea)"}} className="w-12 h-0.5 bg-#ffbb4d mb-3"></div>
                                         <p style={{color:"var(--text-body-color,#4b5563)"}} className="text-base text-gray-700 leading-relaxed">
                                             {bullet.description}
                                         </p>

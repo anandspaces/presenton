@@ -171,14 +171,14 @@ const BulletIconsOnlySlideLayout: React.FC<BulletIconsOnlySlideLayoutProps> = ({
                     {/* Right Section - Image */}
                     <div className="flex-shrink-0 w-96 flex items-center justify-center relative">
                         {/* Decorative Elements */}
-                        <div style={{color:"var(--primary-accent-color,#9333ea)"}} className="absolute top-8 right-8 text-purple-600 opacity-60">
+                        <div style={{color:"var(--primary-accent-color,#9333ea)"}} className="absolute top-8 right-8 text-#ffbb4d opacity-60">
                             <svg width="32" height="32" viewBox="0 0 32 32" fill="currentColor">
                                 <path d="M16 0l4.12 8.38L28 12l-7.88 3.62L16 24l-4.12-8.38L4 12l7.88-3.62L16 0z" />
                             </svg>
                         </div>
 
                         <div className="absolute top-16 left-8 opacity-20">
-                            <svg width="80" height="20" viewBox="0 0 80 20" className="text-purple-600" style={{color:"var(--primary-accent-color,#9333ea)"}}>
+                            <svg width="80" height="20" viewBox="0 0 80 20" className="text-#ffbb4d" style={{color:"var(--primary-accent-color,#9333ea)"}}>
                                 <path
                                     d="M0 10 Q20 0 40 10 T80 10"
                                     stroke="currentColor"

@@ -80,7 +80,7 @@ const BasicInfoSlideLayout: React.FC<BasicInfoSlideLayoutProps> = ({ data: slide
                         </h1>
 
                         {/* Purple accent line */}
-                        <div style={{background:"var(--text-heading-color,#9333ea)"}} className="w-20 h-1 bg-purple-600"></div>
+                        <div style={{background:"var(--text-heading-color,#9333ea)"}} className="w-20 h-1 bg-[#ffbb4d]"></div>
 
                         {/* Description */}
                         <p style={{color:"var(--text-body-color,#4b5563)"}} className="text-base sm:text-lg text-gray-700 leading-relaxed">

@@ -122,7 +122,7 @@ const MetricsWithImageSlideLayout: React.FC<MetricsWithImageSlideLayoutProps> = 
                                     <div style={{color:"var(--text-body-color,#4b5563)"}} className="text-sm text-gray-600 font-medium">
                                         {metric.label}
                                     </div>
-                                    <div style={{color:"var(--text-heading-color,#9333ea)"}} className="text-3xl sm:text-4xl lg:text-5xl font-bold text-purple-600">
+                                    <div style={{color:"var(--text-heading-color,#9333ea)"}} className="text-3xl sm:text-4xl lg:text-5xl font-bold text-#ffbb4d">
                                         {metric.value}
                                     </div>
                                 </div>

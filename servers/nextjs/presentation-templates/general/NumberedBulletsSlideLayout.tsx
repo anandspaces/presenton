@@ -91,7 +91,7 @@ const NumberedBulletsSlideLayout: React.FC<NumberedBulletsSlideLayoutProps> = ({
                                 {slideData?.title || 'Market Validation'}
                             </h1>
                             {/* Purple accent line */}
-                            <div style={{background:"var(--text-heading-color,#9333ea)"}} className="w-24 h-1 bg-purple-600 mb-6"></div>
+                            <div style={{background:"var(--text-heading-color,#9333ea)"}} className="w-24 h-1 bg-#ffbb4d mb-6"></div>
                         </div>
 
                         {/* Image Section */}

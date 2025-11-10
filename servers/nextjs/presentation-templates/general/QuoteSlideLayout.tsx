@@ -73,7 +73,7 @@ const QuoteSlideLayout: React.FC<QuoteSlideLayoutProps> = ({ data: slideData }) 
                 ></div>
 
                 {/* Decorative Elements */}
-                <div className="absolute top-0 left-0 w-32 h-32 bg-purple-600/20 rounded-full blur-3xl"></div>
+                <div className="absolute top-0 left-0 w-32 h-32 bg-#ffbb4d/20 rounded-full blur-3xl"></div>
                 <div className="absolute bottom-0 right-0 w-40 h-40 bg-purple-400/20 rounded-full blur-3xl"></div>
                 <div className="absolute top-1/2 left-1/4 w-24 h-24 bg-white/10 rounded-full blur-2xl"></div>
 

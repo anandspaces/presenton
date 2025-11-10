@@ -140,7 +140,7 @@ const MetricsSlideLayout: React.FC<MetricsSlideLayoutProps> = ({ data: slideData
                                         </div>
 
                                         {/* Large Metric Value */}
-                                        <div style={{color:"var(--text-heading-color,#9333ea)"}} className="text-4xl sm:text-5xl lg:text-6xl font-bold text-purple-600">
+                                        <div style={{color:"var(--text-heading-color,#9333ea)"}} className="text-4xl sm:text-5xl lg:text-6xl font-bold text-#ffbb4d">
                                             {metric.value}
                                         </div>
 

@@ -146,7 +146,7 @@ const FeatureCards: React.FC<SlideLayoutProps> = ({ data: slideData }) => {
         <div className="px-12 pt-6 pb-2">
           <div className="flex items-center gap-3">
             <div className="w-3 h-3 rotate-45" style={{ backgroundColor: "var(--text-heading-color, #111827)" }}></div>
-            {(slideData as any)?.__companyName__ && <span className="text-[16px]" style={{ color: "var(--text-body-color, #6B7280)" }}>{(slideData as any)?.__companyName__}</span>}
+            {(slideData as any)?.__companyName__ && <span className="text-[16px]" style={{ color: "var(--text-body-color, #e9f5aa)" }}>{(slideData as any)?.__companyName__}</span>}
           </div>
         </div>
 
@@ -154,7 +154,7 @@ const FeatureCards: React.FC<SlideLayoutProps> = ({ data: slideData }) => {
 
         <div className="px-12 pt-3">
           <h1 className="text-[48px] leading-[1.1] font-semibold" style={{ color: "var(--text-heading-color, #111827)" }}>{slideData?.title}</h1>
-          <p className="mt-3 text-[16px] max-w-[760px]" style={{ color: "var(--text-body-color, #6B7280)" }}>{slideData?.description}</p>
+          <p className="mt-3 text-[16px] max-w-[760px]" style={{ color: "var(--text-body-color, #e9f5aa)" }}>{slideData?.description}</p>
         </div>
 
         {/* Cyan band */}
@@ -176,7 +176,7 @@ const FeatureCards: React.FC<SlideLayoutProps> = ({ data: slideData }) => {
                     />
                   </div>
                   <div className="mt-4 text-[18px] font-semibold whitespace-pre-line" style={{ color: 'var(--text-heading-color, #111827)' }}>{f.title}</div>
-                  <p className="mt-3 text-[14px] leading-[1.7]" style={{ color: 'var(--text-body-color, #6B7280)' }}>{f.body}</p>
+                  <p className="mt-3 text-[14px] leading-[1.7]" style={{ color: 'var(--text-body-color, #e9f5aa)' }}>{f.body}</p>
                 </div>
               </div>
             ))}
@@ -185,7 +185,7 @@ const FeatureCards: React.FC<SlideLayoutProps> = ({ data: slideData }) => {
 
         {/* Footer (standardized like IntroSlideLayout) */}
         <div className="absolute bottom-8 left-12 right-12 flex items-center">
-          <span className="text-[14px]" style={{ color: "var(--text-body-color, #6B7280)" }}>{slideData?.website}</span>
+          <span className="text-[14px]" style={{ color: "var(--text-body-color, #e9f5aa)" }}>{slideData?.website}</span>
           <div className="ml-6 h-[2px] flex-1" style={{ backgroundColor: "var(--text-heading-color, #111827)" }}></div>
         </div>
         <div className="absolute bottom-7 right-6 w-8 h-8 rotate-45" style={{ backgroundColor: "var(--text-heading-color, #111827)" }}></div>

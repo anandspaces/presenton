@@ -74,7 +74,7 @@ const CommitmentTwoPoints: React.FC<SlideLayoutProps> = ({ data: slideData }) =>
         <div className="px-12 pt-6 pb-2">
           <div className="flex items-center gap-3">
             <div className="w-3 h-3 rotate-45" style={{ backgroundColor: "var(--text-heading-color, #111827)" }}></div>
-            {  (slideData as any)?.__companyName__ && <span className="text-[16px]" style={{ color: "var(--text-body-color, #e9f5aa)" }}>{(slideData as any)?.__companyName__}</span>}
+            {  (slideData as any)?.__companyName__ && <span className="text-[16px]" style={{ color: "var(--text-body-color, #4e4e4e)" }}>{(slideData as any)?.__companyName__}</span>}
           </div>
         </div>
 
@@ -96,7 +96,7 @@ const CommitmentTwoPoints: React.FC<SlideLayoutProps> = ({ data: slideData }) =>
               {slideData?.title}
             </div>
 
-            <p className="mt-10 text-[16px] leading-[1.8] max-w-[520px]" style={{ color: 'var(--text-body-color, #e9f5aa)' }}>
+            <p className="mt-10 text-[16px] leading-[1.8] max-w-[520px]" style={{ color: 'var(--text-body-color, #4e4e4e)' }}>
               {slideData?.statement}
             </p>
           </div>
@@ -106,7 +106,7 @@ const CommitmentTwoPoints: React.FC<SlideLayoutProps> = ({ data: slideData }) =>
             {points.slice(0, 4).map((p, i) => (
               <div key={i}>
                 <div className="text-[24px] font-semibold" style={{ color: 'var(--text-heading-color, #111827)' }}>{p.title}</div>
-                <p className="mt-3 text-[16px] leading-[1.8]" style={{ color: 'var(--text-body-color, #e9f5aa)' }}>{p.body}</p>
+                <p className="mt-3 text-[16px] leading-[1.8]" style={{ color: 'var(--text-body-color, #4e4e4e)' }}>{p.body}</p>
               </div>
             ))}
           </div>
@@ -114,7 +114,7 @@ const CommitmentTwoPoints: React.FC<SlideLayoutProps> = ({ data: slideData }) =>
 
         {/* Footer (align with other Swift layouts) */}
         <div className="absolute bottom-8 left-12 right-12 flex items-center">
-          <span className="text-[14px]" style={{ color: "var(--text-body-color, #e9f5aa)" }}>{slideData?.website}</span>
+          <span className="text-[14px]" style={{ color: "var(--text-body-color, #4e4e4e)" }}>{slideData?.website}</span>
           <div className="ml-6 h-[2px] flex-1" style={{ backgroundColor: "var(--text-heading-color, #111827)" }}></div>
         </div>
         <div className="absolute bottom-7 right-6 w-8 h-8 rotate-45" style={{ backgroundColor: "var(--text-heading-color, #111827)" }}></div>

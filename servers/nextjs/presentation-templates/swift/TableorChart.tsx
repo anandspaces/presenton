@@ -161,14 +161,14 @@ const TableOrChart: React.FC<SlideLayoutProps> = ({ data: slideData }) => {
         <div className="px-12 pt-6 pb-2">
           <div className="flex items-center gap-3">
             <div className="w-3 h-3 rotate-45" style={{ backgroundColor: "var(--text-heading-color, #111827)" }}></div>
-            {(slideData as any)?.__companyName__ && <span className="text-[16px]" style={{ color: "var(--text-body-color, #e9f5aa)" }}>{(slideData as any)?.__companyName__}</span>}
+            {(slideData as any)?.__companyName__ && <span className="text-[16px]" style={{ color: "var(--text-body-color, #4e4e4e)" }}>{(slideData as any)?.__companyName__}</span>}
           </div>
         </div>
 
         {/* Title and description */}
         <div className="px-12 pt-3">
           <h1 className="text-[48px] leading-[1.1] font-semibold" style={{ color: "var(--text-heading-color, #111827)" }}>{slideData?.title}</h1>
-          <p className="mt-3 text-[16px] max-w-[900px]" style={{ color: "var(--text-body-color, #e9f5aa)" }}>{slideData?.description}</p>
+          <p className="mt-3 text-[16px] max-w-[900px]" style={{ color: "var(--text-body-color, #4e4e4e)" }}>{slideData?.description}</p>
         </div>
 
         {/* Content area: Table or Chart */}
@@ -222,35 +222,35 @@ const TableOrChart: React.FC<SlideLayoutProps> = ({ data: slideData }) => {
                 {type === 'bar' ? (
                   <BarChart data={cData} margin={{ top: 10, right: 20, bottom: 10, left: 0 }}>
                     <CartesianGrid stroke={gridColor} strokeDasharray="3 3" />
-                    <XAxis dataKey="label" tick={{ fill: 'var(--text-body-color, #e9f5aa)', fontWeight: 600 }} />
-                    <YAxis tick={{ fill: 'var(--text-body-color, #e9f5aa)', fontWeight: 600 }} />
-                    <Tooltip labelStyle={{ color: 'var(--text-body-color, #e9f5aa)' }} itemStyle={{ color: 'var(--text-body-color, #e9f5aa)' }} />
-                    <Legend wrapperStyle={{ color: 'var(--text-body-color, #e9f5aa)' }} />
+                    <XAxis dataKey="label" tick={{ fill: 'var(--text-body-color, #4e4e4e)', fontWeight: 600 }} />
+                    <YAxis tick={{ fill: 'var(--text-body-color, #4e4e4e)', fontWeight: 600 }} />
+                    <Tooltip labelStyle={{ color: 'var(--text-body-color, #4e4e4e)' }} itemStyle={{ color: 'var(--text-body-color, #4e4e4e)' }} />
+                    <Legend wrapperStyle={{ color: 'var(--text-body-color, #4e4e4e)' }} />
                     <Bar dataKey="value" fill={primaryColor} radius={[6, 6, 0, 0]} label={showLabels ? { position: 'top', fill: '#111827', fontSize: 12 } : false} />
                   </BarChart>
                 ) : type === 'horizontalBar' ? (
                   <BarChart data={cData} layout="vertical" margin={{ top: 10, right: 20, bottom: 10, left: 20 }}>
                     <CartesianGrid stroke={gridColor} strokeDasharray="3 3" />
-                    <XAxis type="number" tick={{ fill: 'var(--text-body-color, #e9f5aa)', fontWeight: 600 }} />
-                    <YAxis type="category" dataKey="label" tick={{ fill: 'var(--text-body-color, #e9f5aa)', fontWeight: 600 }} />
-                    <Tooltip labelStyle={{ color: 'var(--text-body-color, #e9f5aa)' }} itemStyle={{ color: 'var(--text-body-color, #e9f5aa)' }} />
-                    <Legend wrapperStyle={{ color: 'var(--text-body-color, #e9f5aa)' }} />
+                    <XAxis type="number" tick={{ fill: 'var(--text-body-color, #4e4e4e)', fontWeight: 600 }} />
+                    <YAxis type="category" dataKey="label" tick={{ fill: 'var(--text-body-color, #4e4e4e)', fontWeight: 600 }} />
+                    <Tooltip labelStyle={{ color: 'var(--text-body-color, #4e4e4e)' }} itemStyle={{ color: 'var(--text-body-color, #4e4e4e)' }} />
+                    <Legend wrapperStyle={{ color: 'var(--text-body-color, #4e4e4e)' }} />
                     <Bar dataKey="value" fill={primaryColor} radius={[0, 6, 6, 0]} label={showLabels ? { position: 'right', fill: '#111827', fontSize: 12 } : false} />
                   </BarChart>
                 ) : type === 'line' ? (
                   <LineChart data={cData} margin={{ top: 10, right: 20, bottom: 10, left: 0 }}>
                     <CartesianGrid stroke={gridColor} strokeDasharray="3 3" />
-                    <XAxis dataKey="label" tick={{ fill: 'var(--text-body-color, #e9f5aa)', fontWeight: 600 }} />
-                    <YAxis tick={{ fill: 'var(--text-body-color, #e9f5aa)', fontWeight: 600 }} />
-                    <Tooltip labelStyle={{ color: 'var(--text-body-color, #e9f5aa)' }} itemStyle={{ color: 'var(--text-body-color, #e9f5aa)' }} />
-                    <Legend wrapperStyle={{ color: 'var(--text-body-color, #e9f5aa)' }} />
+                    <XAxis dataKey="label" tick={{ fill: 'var(--text-body-color, #4e4e4e)', fontWeight: 600 }} />
+                    <YAxis tick={{ fill: 'var(--text-body-color, #4e4e4e)', fontWeight: 600 }} />
+                    <Tooltip labelStyle={{ color: 'var(--text-body-color, #4e4e4e)' }} itemStyle={{ color: 'var(--text-body-color, #4e4e4e)' }} />
+                    <Legend wrapperStyle={{ color: 'var(--text-body-color, #4e4e4e)' }} />
                     <Line type="monotone" dataKey="value" stroke={primaryColor} strokeWidth={3} dot={{ r: 3 }} label={showLabels ? { position: 'top', fill: '#111827', fontSize: 12 } : false} />
                   </LineChart>
                 ) : (
                   <PieChart>
-                    <Tooltip labelStyle={{ color: 'var(--text-body-color, #e9f5aa)' }} itemStyle={{ color: 'var(--text-body-color, #e9f5aa)' }} />
-                    <Legend wrapperStyle={{ color: 'var(--text-body-color, #e9f5aa)' }} />
-                    <Pie data={cData} dataKey="value" nameKey="label" cx="50%" cy="50%" outerRadius={120} label={showLabels ? { fill: 'var(--text-body-color, #e9f5aa)' } : false}>
+                    <Tooltip labelStyle={{ color: 'var(--text-body-color, #4e4e4e)' }} itemStyle={{ color: 'var(--text-body-color, #4e4e4e)' }} />
+                    <Legend wrapperStyle={{ color: 'var(--text-body-color, #4e4e4e)' }} />
+                    <Pie data={cData} dataKey="value" nameKey="label" cx="50%" cy="50%" outerRadius={120} label={showLabels ? { fill: 'var(--text-body-color, #4e4e4e)' } : false}>
                       {cData.map((_, i) => (
                         <Cell key={i} fill={primaryColor} />
                       ))}
@@ -264,7 +264,7 @@ const TableOrChart: React.FC<SlideLayoutProps> = ({ data: slideData }) => {
 
         {/* Footer (standardized like IntroSlideLayout) */}
         <div className="absolute bottom-8 left-12 right-12 flex items-center">
-          <span className="text-[14px]" style={{ color: "var(--text-body-color, #e9f5aa)" }}>{slideData?.website}</span>
+          <span className="text-[14px]" style={{ color: "var(--text-body-color, #4e4e4e)" }}>{slideData?.website}</span>
           <div className="ml-6 h-[2px] flex-1" style={{ backgroundColor: "var(--text-heading-color, #111827)" }}></div>
         </div>
         <div className="absolute bottom-7 right-6 w-8 h-8 rotate-45" style={{ backgroundColor: "var(--text-heading-color, #111827)" }}></div>

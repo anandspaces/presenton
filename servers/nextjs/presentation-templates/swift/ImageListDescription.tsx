@@ -108,7 +108,7 @@ const TeamMembers: React.FC<SlideLayoutProps> = ({ data: slideData }) => {
             ></div>
           {  (slideData as any)?.__companyName__ && <span
               className="text-[16px]"
-              style={{ color: "var(--text-body-color, #e9f5aa)" }}
+              style={{ color: "var(--text-body-color, #4e4e4e)" }}
             >
               {(slideData as any)?.__companyName__}
             </span>}
@@ -128,7 +128,7 @@ const TeamMembers: React.FC<SlideLayoutProps> = ({ data: slideData }) => {
             </div>
             <p
               className="mt-8 text-[16px] leading-[1.8] max-w-[300px]"
-              style={{ color: "var(--text-body-color, #e9f5aa)" }}
+              style={{ color: "var(--text-body-color, #4e4e4e)" }}
             >
               {slideData?.description}
             </p>
@@ -145,7 +145,7 @@ const TeamMembers: React.FC<SlideLayoutProps> = ({ data: slideData }) => {
                 {/* Cyan details panel */}
                 <div className="relative -mt-[1px] rounded-b-[28px] px-6 pt-6 pb-7" style={{ backgroundColor: 'var(--primary-accent-color, #BFF4FF)' }}>
                   <div className="text-[20px] font-semibold" style={{ color: 'var(--text-heading-color, #111827)' }}>{it.title}</div>
-                  <p className="mt-3 text-[14px] leading-[1.7]" style={{ color: 'var(--text-body-color, #e9f5aa)' }}>{it.description}</p>
+                  <p className="mt-3 text-[14px] leading-[1.7]" style={{ color: 'var(--text-body-color, #4e4e4e)' }}>{it.description}</p>
                 </div>
               </div>
             ))}
@@ -154,7 +154,7 @@ const TeamMembers: React.FC<SlideLayoutProps> = ({ data: slideData }) => {
 
         {/* Footer line with website and end diamond */}
         <div className="absolute bottom-8 left-12 right-12 flex items-center">
-          <span className="text-[14px]" style={{ color: "var(--text-body-color, #e9f5aa)" }}>{slideData?.website}</span>
+          <span className="text-[14px]" style={{ color: "var(--text-body-color, #4e4e4e)" }}>{slideData?.website}</span>
           <div className="ml-6 h-[2px] flex-1" style={{ backgroundColor: "#E5E7EB" }}></div>
         </div>
 

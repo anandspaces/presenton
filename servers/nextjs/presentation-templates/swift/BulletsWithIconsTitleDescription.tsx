@@ -168,7 +168,7 @@ const InfographicFourIcons: React.FC<SlideLayoutProps> = ({ data }) => {
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
               <div className="w-3 h-3 rotate-45" style={{ backgroundColor: "var(--text-heading-color, #111827)" }}></div>
-             {(slideData as any )?.__companyName__ && <span className="text-[16px]" style={{ color: "var(--text-body-color, #e9f5aa)" }}>{(slideData as any)?.__companyName__}</span>}
+             {(slideData as any )?.__companyName__ && <span className="text-[16px]" style={{ color: "var(--text-body-color, #4e4e4e)" }}>{(slideData as any)?.__companyName__}</span>}
             </div>
           </div>
         </div>
@@ -186,7 +186,7 @@ const InfographicFourIcons: React.FC<SlideLayoutProps> = ({ data }) => {
                 </div>
               )}
               {slideData.sideParagraph && (
-                <div className="text-[14px] leading-[1.6]" style={{ color: "var(--text-body-color, #e9f5aa)" }}>
+                <div className="text-[14px] leading-[1.6]" style={{ color: "var(--text-body-color, #4e4e4e)" }}>
                   {slideData.sideParagraph}
                 </div>
               )}
@@ -217,7 +217,7 @@ const InfographicFourIcons: React.FC<SlideLayoutProps> = ({ data }) => {
                 <div className="mt-5 text-[16px] font-semibold" style={{ color: "var(--text-heading-color, #111827)" }}>
                   {item.title}
                 </div>
-                <div className="mt-2 text-[13px] leading-[1.6] max-w-[260px]" style={{ color: "var(--text-body-color, #e9f5aa)" }}>
+                <div className="mt-2 text-[13px] leading-[1.6] max-w-[260px]" style={{ color: "var(--text-body-color, #4e4e4e)" }}>
                   {item.description}
                 </div>
               </div>
@@ -227,7 +227,7 @@ const InfographicFourIcons: React.FC<SlideLayoutProps> = ({ data }) => {
 
         {/* Footer (standardized like IntroSlideLayout) */}
         <div className="absolute bottom-8 left-12 right-12 flex items-center">
-          <span className="text-[14px]" style={{ color: "var(--text-body-color, #e9f5aa)" }}>{slideData.website}</span>
+          <span className="text-[14px]" style={{ color: "var(--text-body-color, #4e4e4e)" }}>{slideData.website}</span>
           <div className="ml-6 h-[2px] flex-1" style={{ backgroundColor: "var(--text-heading-color, #111827)" }}></div>
         </div>
         <div className="absolute bottom-7 right-6 w-8 h-8 rotate-45" style={{ backgroundColor: "var(--text-heading-color, #111827)" }}></div>

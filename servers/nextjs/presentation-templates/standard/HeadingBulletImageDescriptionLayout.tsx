@@ -119,7 +119,7 @@ const ImageSchema = z.object({
                     <div className="w-[240px] h-[64px] rounded-sm text-white flex items-center justify-center  text-[22px]" style={{ backgroundColor: 'var(--primary-accent-color, #1B8C2D)', color: 'var(--text-heading-color, #FFFFFF)' }}>
                     {card.title}
                   </div>
-                    <p className="mt-6 text-center text-[16px] leading-[28px]  max-w-[240px]" style={{ color: 'var(--text-body-color, #a6c8c6)' }}>
+                    <p className="mt-6 text-center text-[16px] leading-[28px]  max-w-[240px]" style={{ color: 'var(--text-body-color, #4e4e4e)' }}>
                     {card.body}
                   </p>
                 </div>

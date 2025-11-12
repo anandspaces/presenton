@@ -130,7 +130,7 @@ const dynamicSlideLayout: React.FC<SlideLayoutProps> = ({ data: slideData }) => 
           {slideData?.description && (
             <p
               className="mt-5 text-[16px] leading-[1.6] max-w-[1020px] "
-              style={{ color: "var(--text-body-color, #a6c8c6)" }}
+              style={{ color: "var(--text-body-color, #4e4e4e)" }}
             >
               {slideData?.description}
             </p>

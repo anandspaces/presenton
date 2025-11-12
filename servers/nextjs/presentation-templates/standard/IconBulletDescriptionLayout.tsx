@@ -138,7 +138,7 @@ const ImageSchema = z.object({
                     </div>
                     <div className="flex-1">
                       <h3 className=" text-[24px] font-semibold leading-[1.15]" style={{ color: 'var(--text-heading-color, #111827)' }}>{item.title}</h3>
-                      <p className=" text-[16px] leading-[1.55] mt-[8px]" style={{ color: 'var(--text-body-color, #a6c8c6)' }}>{item.description}</p>
+                      <p className=" text-[16px] leading-[1.55] mt-[8px]" style={{ color: 'var(--text-body-color, #4e4e4e)' }}>{item.description}</p>
                     </div>
                   </li>
                 ))}
@@ -149,7 +149,7 @@ const ImageSchema = z.object({
           <div className="pt-[28px]">
             <h1 className="font-['Playfair Display'] text-[64px] leading-[1.05] tracking-[-0.01em] max-w-[600px] font-semibold" style={{ color: 'var(--text-heading-color, #111827)' }} dangerouslySetInnerHTML={{ __html: (slideData?.rightTitle || "Disrupting the\nIndustry").replace(/\n/g, "<br/>") }}></h1>
             <div className="mt-[24px] inline-block rounded-md px-6 py-4" style={{ backgroundColor: 'var(--secondary-accent-color, #F3F4F6)' }}>
-              <p className="font-['Playfair Display'] text-[16px] leading-[1.6] max-w-[620px]" style={{ color: 'var(--text-body-color, #a6c8c6)' }}>
+              <p className="font-['Playfair Display'] text-[16px] leading-[1.6] max-w-[620px]" style={{ color: 'var(--text-body-color, #4e4e4e)' }}>
                 {slideData?.rightDescription || "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna"}
               </p>
             </div>

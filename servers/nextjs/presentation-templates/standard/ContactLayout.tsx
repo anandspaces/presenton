@@ -183,7 +183,7 @@ const ImageSchema = z.object({
                     <div className="text-[24px]  font-semibold mb-2" style={{ color: 'var(--text-heading-color, #111827)' }}>
                       {sec.label}
                     </div>
-                    <div className="text-[18px] " style={{ color: 'var(--text-body-color, #a6c8c6)' }}>
+                    <div className="text-[18px] " style={{ color: 'var(--text-body-color, #4e4e4e)' }}>
                       {sec.value}
                     </div>
                     {sec.showDivider ? <div className="border-b border-gray-300 mt-6"></div> : null}
